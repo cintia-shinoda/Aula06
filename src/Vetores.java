@@ -4,32 +4,46 @@ public class Vetores {
 
 	public static void main(String[] args) {
 		
-		double aluno1, aluno2, aluno3, aluno4, aluno5, aluno6, aluno7, aluno8, aluno9, aluno10, total;
+		// double aluno1, aluno2, aluno3, aluno4, aluno5, aluno6, aluno7, aluno8, aluno9, aluno10, total;
+		double total=0;
+		double alunos[] = new double[10];
+		
 		Scanner leitor = new Scanner(System.in);
 		
-		System.out.println("Por favor, digite o consumo do 1บ aluno");
+		
+		/*
+		System.out.println("Por favor, digite o consumo do 1ยบ aluno");
 		aluno1 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 2บ aluno");
+		System.out.println("Por favor, digite o consumo do 2ยบ aluno");
 		aluno2 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 3บ aluno");
+		System.out.println("Por favor, digite o consumo do 3ยบ aluno");
 		aluno3 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 4บ aluno");
+		System.out.println("Por favor, digite o consumo do 4ยบ aluno");
 		aluno4 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 5บ aluno");
+		System.out.println("Por favor, digite o consumo do 5ยบ aluno");
 		aluno5 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 6บ aluno");
+		System.out.println("Por favor, digite o consumo do 6ยบ aluno");
 		aluno6 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 7บ aluno");
+		System.out.println("Por favor, digite o consumo do 7ยบ aluno");
 		aluno7 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 8บ aluno");
+		System.out.println("Por favor, digite o consumo do 8ยบ aluno");
 		aluno8 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 9บ aluno");
+		System.out.println("Por favor, digite o consumo do 9ยบ aluno");
 		aluno9 = leitor.nextDouble();
-		System.out.println("Por favor, digite o consumo do 10บ aluno");
+		System.out.println("Por favor, digite o consumo do 10ยบ aluno");
 		aluno10 = leitor.nextDouble();
+		*/
+		for (int i=0; i<alunos.length; i++) {
+			System.out.println("Por favor, digite o consumo do " + (i+1) + "ยบ aluno");
+			alunos[i] = leitor.nextDouble();
+			
+			// total = aluno1 + aluno2 + aluno3 + aluno4 + aluno5 + aluno6 + aluno7 + aluno8 + aluno9 + aluno10;
+			total = total + alunos[i];
+		}
 		
-		total = aluno1 + aluno2 + aluno3 + aluno4 + aluno5 + aluno6 + aluno7 + aluno8 + aluno9 + aluno10;
 		
+		
+		/*
 		System.out.println("O aluno 1 consumiu R$" + aluno1);
 		System.out.println("O aluno 2 consumiu R$" + aluno2);
 		System.out.println("O aluno 3 consumiu R$" + aluno3);
@@ -40,6 +54,12 @@ public class Vetores {
 		System.out.println("O aluno 8 consumiu R$" + aluno8);
 		System.out.println("O aluno 9 consumiu R$" + aluno9);
 		System.out.println("O aluno 10 consumiu R$" + aluno10);
+		*/
+		for (int i=0; i<alunos.length; i++) {
+			System.out.println("O aluno " + (i+1) +  " consumiu R$" + alunos[i]);
+		}
+		
+
 
 		System.out.println("O total de consumo foi de R$" + total);
 		
